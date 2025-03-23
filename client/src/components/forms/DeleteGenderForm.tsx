@@ -10,3 +10,4 @@ const DeleteGenderForm = () => {
 };
 
 export default DeleteGenderForm;
+

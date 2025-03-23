@@ -1,4 +1,4 @@
-import EditGenderForm from "../components/forms/EditGenderForm";
+import EditGenderForm from "../../components/forms/EditGenderForm";
 import MainLayout from "../layout/MainLayout";
 
 const EditGender = () => {
