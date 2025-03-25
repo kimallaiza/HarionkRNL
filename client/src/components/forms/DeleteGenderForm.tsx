@@ -1,13 +1,30 @@
+import { Link } from "react-router-dom";
 
 const DeleteGenderForm = () => {
-    return (
-        <div>
-            <h2>Delete Gender</h2>
-            <p>Are you sure you want to delete this gender?</p>
-            <button>Confirm Delete</button>
+  return (
+    <>
+      <div className="form-group">
+        <div className="mb-3">
+          <label htmlFor="gender">Gender</label>
+          <input
+            type="text"
+            className="form-control"
+            id="gender"
+            name="gender"
+            readOnly
+          />
         </div>
-    );
+        <div className="d-flex justify-content-end">
+          <Link to={"/"} className="btn btn-secondary me-1">
+            NO
+          </Link>
+          <button type="submit" className="btn btn-danger">
+            YES
+          </button>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default DeleteGenderForm;
-
